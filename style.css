@@ -15,3 +15,20 @@ p{
 #message{
     font-style: italic;
 }
+button {
+    background-color: goldenrod;
+    color:#146356;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 2px;
+    margin: auto;
+    display: flex;
+}
+/*startbtn :hover{
+    background-color: #146356;
+    color:goldenrod;
+}*/
+#startbtn{
+   margin-bottom: 20px; 
+}
