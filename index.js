@@ -7,6 +7,7 @@ let msg = document.getElementById("message");
 let sums = document.getElementById("sum")
 let cardss = document.getElementById("cards")
 function render(){
+cardss.textContent="Cards: "
 if(sum<=20){
     message="Do you Want to draw a new card 🙂"
 }
@@ -18,7 +19,9 @@ else {
 }
 msg.innerText = message
 sums.textContent="Sum: " + sum
-cardss.textContent="Cards: " + cards[0] + " - " + cards[1] + " - " + cards[2]
+for( let i = 0; i<cards.length;i++){
+    cardss.textContent+= +cards[i]+" - "
+}
 }
 
 function start(){
@@ -27,7 +30,7 @@ function start(){
 let thirdcard = " "
 function newcard(){
 thirdcard = Math.floor(Math.random()*11)
-cards = [firstcard,secondcard,thirdcard]
+cards.push(thirdcard)
 sum+=thirdcard
 render()   
 }
