@@ -1,0 +1,17 @@
+body{
+    background-color: #146356;
+    color:white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-size: 5rem;
+    color: goldenrod;
+}
+p{
+    
+    font-size: 2rem;
+}
+#message{
+    font-style: italic;
+}
